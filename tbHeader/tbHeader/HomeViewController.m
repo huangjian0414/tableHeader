@@ -14,15 +14,24 @@
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSArray *titleArray;
+
+@property(nonatomic,strong)NSArray *vcArray;
 @end
 
 @implementation HomeViewController
 -(NSArray *)titleArray
 {
     if (!_titleArray) {
-        _titleArray=@[@"表头拉大",@"上拉表头文字移至title动画"];
+        _titleArray=@[@"表头拉大",@"上拉表头文字移至title动画",@"个人中心头部波浪"];
     }
     return _titleArray;
+}
+-(NSArray *)vcArray
+{
+    if (!_vcArray) {
+        _vcArray=@[@"FirstViewController",@"AnimTbController",@"WaveController"];
+    }
+    return _vcArray;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,25 +64,13 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    switch (indexPath.row) {
-        case 0:
-            [self goHeaderTb];
-            break;
-        case 1:
-            [self goAnimTb];
-            break;
-        default:
-            break;
-    }
+    [self goVcWithName:self.vcArray[indexPath.row]];
 }
--(void)goHeaderTb
+-(void)goVcWithName:(NSString *)vcName
 {
-    FirstViewController *vc=[[FirstViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    Class targetClass = NSClassFromString(vcName);
+    UIViewController *target=[[targetClass alloc]init];
+    [self.navigationController pushViewController:target animated:YES];
 }
--(void)goAnimTb
-{
-    AnimTbController *vc=[[AnimTbController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+
 @end

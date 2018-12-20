@@ -38,7 +38,7 @@
     
 
     //不用v来装imgV 会有问题
-    UIView *v=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 375, 200)];
+    UIView *v=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200)];
     UIImageView *imgV =[[UIImageView alloc]initWithFrame:v.bounds];
     imgV.image=[UIImage imageNamed:@"2.jpg"];
     [v addSubview:imgV];

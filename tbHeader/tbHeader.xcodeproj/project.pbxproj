@@ -28,6 +28,7 @@
 		7EF159A821CA4EC40086946F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1599D21CA4EC40086946F /* MASConstraint.m */; };
 		7EF159A921CA4EC40086946F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1599F21CA4EC40086946F /* MASViewConstraint.m */; };
 		7EF159AA21CA4EC40086946F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF159A021CA4EC40086946F /* MASViewAttribute.m */; };
+		7EF159AD21CB81320086946F /* WaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF159AC21CB81320086946F /* WaveController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		7EF1599E21CA4EC40086946F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		7EF1599F21CA4EC40086946F /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		7EF159A021CA4EC40086946F /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		7EF159AB21CB81320086946F /* WaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveController.h; sourceTree = "<group>"; };
+		7EF159AC21CB81320086946F /* WaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				7EA499F021C9E4590041783D /* FirstViewController.m */,
 				7EF1598121C9FBA50086946F /* AnimTbController.h */,
 				7EF1598221C9FBA50086946F /* AnimTbController.m */,
+				7EF159AB21CB81320086946F /* WaveController.h */,
+				7EF159AC21CB81320086946F /* WaveController.m */,
 				7EF1598421CA19700086946F /* AnimHeader.h */,
 				7EF1598521CA19700086946F /* AnimHeader.m */,
 				7EA499DB21C9E3F90041783D /* ViewController.h */,
@@ -243,6 +248,7 @@
 				7EF159A721CA4EC40086946F /* View+MASAdditions.m in Sources */,
 				7EF159A321CA4EC40086946F /* MASCompositeConstraint.m in Sources */,
 				7EA499DA21C9E3F90041783D /* AppDelegate.m in Sources */,
+				7EF159AD21CB81320086946F /* WaveController.m in Sources */,
 				7EF159A221CA4EC40086946F /* ViewController+MASAdditions.m in Sources */,
 				7EF1598021C9FA3B0086946F /* HomeViewController.m in Sources */,
 				7EA499F121C9E4590041783D /* FirstViewController.m in Sources */,
