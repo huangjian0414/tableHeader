@@ -34,7 +34,7 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
-    [navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //[navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     //此处设置底部线条颜色
     [navigationBar setShadowImage:[UIImage new]];
     UILabel *label=[[UILabel alloc]init];
@@ -133,6 +133,8 @@
                 make.height.mas_equalTo(30-30*ratioY);
                 make.width.mas_equalTo(100-100*ratioY);
             }];
+            self.navigationItem.titleView.alpha = ratioY;
+            [[[self.navigationController.navigationBar subviews]objectAtIndex:0] setAlpha:1-ratioY];
         }
         self.header.subLabel.hidden= self.header.titleLabel.hidden=offset.y==120-64;
         self.labe.text=offset.y==120-64?@"上海好冷":@"";
